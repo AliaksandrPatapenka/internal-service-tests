@@ -1,0 +1,18 @@
+package apiAuto.common.helpers;
+
+import io.restassured.response.Response;
+
+/**
+ * Утилита для проверки HTTP-статуса ответа
+ */
+
+public class HttpAssert {
+    public static void httpStatusAssert(Response response, int expected) {
+        int actual = response.getStatusCode();
+        if (actual != expected) {
+            throw new AssertionError("Ожидаемый статус " + expected + "\n" +
+                    "Фактический статус: " + actual + "\n" +
+                    "Тело ответа: " + response.body().asString());
+        }
+    }
+}

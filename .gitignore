@@ -1,0 +1,23 @@
+### Сборка Maven ###
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Отчёты Allure ###
+allure-results/
+allure-report/
+
+
+src/test/resources/config/local/app.properties
+.env
+app/*.jar
+
+
+.DS_Store
+*.log

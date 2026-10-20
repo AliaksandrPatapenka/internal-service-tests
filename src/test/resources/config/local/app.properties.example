@@ -1,0 +1,5 @@
+base.url=http://localhost:8080
+http.connection.timeout=10000
+http.socket.timeout=10000
+api.key=API_КЛЮЧ
+app.secret=КЛЮЧ_ПРИЛОЖЕНИЯ
