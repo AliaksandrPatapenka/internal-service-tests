@@ -29,6 +29,10 @@ public class WireMockHelper {
         mockServer.resetAll();
     }
 
+    public static void verifyPostTo(String endpoint) {
+        mockServer.verify(postRequestedFor(urlEqualTo(endpoint)));
+    }
+
     public static void stub(int statusCode, String stubEndpoint) {
         mockServer.stubFor(post(urlEqualTo(stubEndpoint))
                 .willReturn(aResponse().withStatus(statusCode)));
