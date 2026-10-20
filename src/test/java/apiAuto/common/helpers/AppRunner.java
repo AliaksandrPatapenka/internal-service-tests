@@ -1,7 +1,6 @@
 package apiAuto.common.helpers;
 
 import apiAuto.common.config.Props;
-import com.fasterxml.jackson.databind.annotation.JsonAppend;
 
 public class AppRunner {
     private static Process appProcess;

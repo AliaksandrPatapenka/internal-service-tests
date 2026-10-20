@@ -1,4 +1,4 @@
-#  API-тесты (RestAssured + JUnit 5 + WireMock)
+# API-тесты (RestAssured + JUnit 5 + WireMock)
 
 ## Используемые технологии
 

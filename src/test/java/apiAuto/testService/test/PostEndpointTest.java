@@ -108,7 +108,7 @@ public class PostEndpointTest {
         private static final String ERROR_SCHEMA = Schemas.ERROR_SCHEMA;
 
         @Test
-        @DisplayName("Case 2.1: Действие LOGIN. В параметрах запроса отсутствует api-key (401) ")
+        @DisplayName("Case 2.1: Действие LOGIN. В параметрах запроса отсутствует api-key (401)")
         void notApiKey() {
             EndpointTemplate.endpointTemplate(EndpointSpecs.requestSpecNotApiKey(),
                             Endpoints.ENDPOINT,
@@ -152,7 +152,7 @@ public class PostEndpointTest {
         }
 
         @Test
-        @DisplayName("Case 2.5: Действие ACTION. В параметрах запроса токен, который не прошел  LOGIN (403)")
+        @DisplayName("Case 2.5: Действие ACTION. В параметрах запроса токен, который не прошел LOGIN (403)")
         void ActionTokenNotSystem() {
             EndpointTemplate.endpointTemplate(EndpointSpecs.requestSpec(Props.API_KEY),
                             Endpoints.ENDPOINT,

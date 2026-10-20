@@ -11,11 +11,11 @@ import static io.restassured.RestAssured.given;
  * Шаблоны HTTP-запросов
  */
 public class RequestTemplate {
-public static Response post(RequestSpecification spec,
-                                    String endpoint,
-                                    String token,
-                                    String action,
-                                    int httpStatus) {
+    public static Response post(RequestSpecification spec,
+                                String endpoint,
+                                String token,
+                                String action,
+                                int httpStatus) {
         Response response = given(spec)
                 .formParam("token", token)
                 .formParam("action", action)

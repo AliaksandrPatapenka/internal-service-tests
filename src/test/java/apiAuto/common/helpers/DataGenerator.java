@@ -2,9 +2,6 @@ package apiAuto.common.helpers;
 
 import java.security.SecureRandom;
 
-/**
- * Генератор тестовых данных сервиса presentation
- */
 public class DataGenerator {
 
     public static String generateToken() {
