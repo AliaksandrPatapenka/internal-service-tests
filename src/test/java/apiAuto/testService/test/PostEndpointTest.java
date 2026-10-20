@@ -69,6 +69,8 @@ public class PostEndpointTest {
                             HttpStatus.OK)
                     .then()
                     .body(matchesJsonSchemaInClasspath(SUCCESS_SCHEMA));
+
+            WireMockHelper.verifyPostTo(StubEndpoint.ENDPOINT_AUTH);
         }
 
         @Test
@@ -83,6 +85,8 @@ public class PostEndpointTest {
                             HttpStatus.OK)
                     .then()
                     .body(matchesJsonSchemaInClasspath(SUCCESS_SCHEMA));
+
+            WireMockHelper.verifyPostTo(StubEndpoint.ENDPOINT_DO_ACTION);
         }
 
         @Test
