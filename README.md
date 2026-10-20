@@ -77,7 +77,7 @@
 | № кейса | Метод | Название теста | Статус код |
 |---------|-------|----------------|------------|
 | Case 2.1 | POST /endpoint | Отсутствует api-key | 401 |
-| Case 2.2 | POST /endpoint | Невалидный формат token (не 32 hex) | 400 |
+| Case 2.2 | POST /endpoint | Невалидный формат token | 400 |
 | Case 2.3 | POST /endpoint | Отсутствует параметр token | 400 |
 | Case 2.4 | POST /endpoint | Отсутствует параметр action | 400 |
 | Case 2.5 | POST /endpoint | ACTION с токеном, не прошедшим LOGIN | 403 |
