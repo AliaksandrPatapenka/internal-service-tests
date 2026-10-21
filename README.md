@@ -41,7 +41,7 @@
 
 ## Что сделать перед запуском:
 
-1. Скопировать шаблон `src/test/resources/config/local/app.properties.example` в локальный конфиг `src/test/resources/config/local/app.properties`.
+1. Создать локальный конфиг `src/test/resources/config/local/app.properties` и скопировать туда данные из шаблона `src/test/resources/config/local/app.properties.example` (ключи заполнить самостоятельно актуальными)
 2. В локальном конфиге заполнить актуальные значения `api.key` и `api.secret`.
 3. Jar тестируемого сервиса положить в `internal-service-tests/app`.
 
