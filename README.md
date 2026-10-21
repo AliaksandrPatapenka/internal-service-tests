@@ -1,5 +1,7 @@
 # API-тесты (RestAssured + JUnit 5 + WireMock)
 
+---
+
 ## Используемые технологии
 
 | Технология                | Версия  |
@@ -41,16 +43,13 @@
 
 ## Что сделать перед запуском:
 
-1. Создать локальный конфиг `src/test/resources/config/local/app.properties` и скопировать туда данные из шаблона `src/test/resources/config/local/app.properties.example` (ключи заполнить самостоятельно актуальными)
-2. В локальном конфиге заполнить актуальные значения `api.key` и `api.secret`.
-3. Jar тестируемого сервиса положить в `internal-service-tests/app`.
+1. Создать локальный конфиг `src/test/resources/config/local/app.properties` и скопировать туда данные из шаблона `src/test/resources/config/local/app.properties.example`
+2. В локальном конфиге заполнить `api.key` и `api.secret` актуальными значениями.
+3. .jar тестируемого сервиса положить в `internal-service-tests/app`.
 
 ---
 
-## Как запустить
-
-
-**Запуск тестов + генерация отчета**
+## Запуск тестов + генерация отчета
 
     mvn clean test; mvn allure:serve
 
