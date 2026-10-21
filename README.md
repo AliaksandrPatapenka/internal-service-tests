@@ -43,7 +43,7 @@
 
 1. Создать локальный конфиг `src/test/resources/config/local/app.properties` и скопировать туда данные из шаблона `src/test/resources/config/local/app.properties.example`
 2. В локальном конфиге заполнить `api.key` и `api.secret` актуальными значениями.
-3. .jar тестируемого сервиса положить в `internal-service-tests/app`.
+3. `.jar` тестируемого сервиса положить в `internal-service-tests/app`.
 
 ---
 
